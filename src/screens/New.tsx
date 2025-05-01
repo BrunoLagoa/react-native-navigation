@@ -1,12 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { DrawerSceneWrapper } from '../components/drawer-scene-wrapper';
 
 export default function New() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>New</Text>
-    </View>
+    <DrawerSceneWrapper>
+      <View style={styles.container}>
+        <Text style={styles.title}>New</Text>
+      </View>
+    </DrawerSceneWrapper>
   );
 }
 
